@@ -82,21 +82,6 @@ export default function Home() {
               ></div>
             ))}
           </div>
-          <div className="shooting-stars">
-            {Array.from({ length: 3 }).map((_, index) => (
-              <div
-                key={index}
-                className="shooting-star"
-                style={{
-                  animationDuration: `${Math.random() * 2 + 1.25}s`,
-                  animationDelay: `${Math.random() * 3}s`,
-                  top: `${Math.random() * 100}vh`,
-                  left: `${Math.random() * 100}vw`,
-                  transform: `rotate(${Math.random() * 360}deg)`,
-                }}
-              ></div>
-            ))}
-          </div>
         </div>
       </section>
 
